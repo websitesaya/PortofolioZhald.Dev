@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rijald D. Elimanafe — Web Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Bebas+Neue&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Noise Overlay -->
+  <div class="noise-overlay"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <span class="logo-text">Zhald<span class="logo-dot">.</span>Dev</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about" class="nav-link" data-text="Tentang">Tentang</a></li>
+      <li><a href="#services" class="nav-link" data-text="Layanan">Layanan</a></li>
+      <li><a href="#portfolio" class="nav-link" data-text="Portofolio">Portofolio</a></li>
+      <li><a href="#contact" class="nav-link" data-text="Kontak">Kontak</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Hire Me</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <span class="theme-icon theme-icon--dark">🌙</span>
+      <span class="theme-icon theme-icon--light">☀️</span>
+    </button>
+  </nav>
+
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">Tentang</a></li>
+      <li><a href="#services" class="mobile-link">Layanan</a></li>
+      <li><a href="#portfolio" class="mobile-link">Portofolio</a></li>
+      <li><a href="#contact" class="mobile-link">Kontak</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-blob blob-1"></div>
+      <div class="hero-blob blob-2"></div>
+      <div class="hero-blob blob-3"></div>
+      <div class="grid-lines"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge reveal-up">
+        <span class="badge-dot"></span>
+        <span>Available for projects</span>
+      </div>
+
+      <h1 class="hero-title">
+        <span class="title-line reveal-up" style="--delay: 0.1s">Saya Membuat</span>
+        <span class="title-line title-italic reveal-up" style="--delay: 0.2s">Website</span>
+        <span class="title-line reveal-up" style="--delay: 0.3s">yang <em class="title-highlight">Berkesan</em></span>
+      </h1>
+
+      <p class="hero-desc reveal-up" style="--delay: 0.4s">
+        Junior Web Developer yang mengkhususkan diri dalam membuat <strong>Landing Page</strong>, <strong>Company
+          Profile</strong>, dan <strong>Undangan Digital</strong> dengan desain modern dan memukau.
+      </p>
+
+      <div class="hero-actions reveal-up" style="--delay: 0.5s">
+        <a href="#portfolio" class="btn btn-primary">
+          <span>Lihat Karya</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+        <a href="#contact" class="btn btn-ghost">Hubungi Saya</a>
+      </div>
+
+      <div class="hero-stats reveal-up" style="--delay: 0.6s">
+        <div class="stat">
+          <span class="stat-number" data-count="10">0</span>
+          <span class="stat-plus">+</span>
+          <span class="stat-label">Proyek Selesai</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" data-count="100">0</span>
+          <span class="stat-plus">%</span>
+          <span class="stat-label">Kepuasan Klien</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" data-count="3">0</span>
+          <span class="stat-plus">+</span>
+          <span class="stat-label">Jenis Layanan</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal-right">
+      <div class="hero-card-wrapper">
+        <div class="hero-card">
+          <div class="card-glow"></div>
+          <div class="card-header">
+            <div class="card-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <span class="card-title">portfolio.js</span>
+          </div>
+          <div class="card-body">
+            <div class="code-line"><span class="c-purple">const</span> <span class="c-blue">developer</span> <span
+                class="c-white">=</span> <span class="c-orange">{</span></div>
+            <div class="code-line pl-1"><span class="c-green">name</span><span class="c-white">:</span> <span
+                class="c-yellow">"Zhald Dev"</span><span class="c-white">,</span></div>
+            <div class="code-line pl-1"><span class="c-green">role</span><span class="c-white">:</span> <span
+                class="c-yellow">"Web Developer"</span><span class="c-white">,</span></div>
+            <div class="code-line pl-1"><span class="c-green">skills</span><span class="c-white">: [</span></div>
+            <div class="code-line pl-2"><span class="c-yellow">"Landing Page"</span><span class="c-white">,</span></div>
+            <div class="code-line pl-2"><span class="c-yellow">"Company Profile"</span><span class="c-white">,</span>
+            </div>
+            <div class="code-line pl-2"><span class="c-yellow">"Undangan Digital"</span></div>
+            <div class="code-line pl-1"><span class="c-white">],</span></div>
+            <div class="code-line pl-1"><span class="c-green">status</span><span class="c-white">:</span> <span
+                class="c-yellow">"available"</span> <span class="c-comment">✓</span></div>
+            <div class="code-line"><span class="c-orange">}</span><span class="c-white">;</span></div>
+          </div>
+        </div>
+
+        <div class="floating-badge badge-top">
+          <span>⚡</span> Fast Delivery
+        </div>
+        <div class="floating-badge badge-bottom">
+          <span>✨</span> Premium Design
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <div class="marquee-content">
+        <span>Landing Page</span><span class="sep">✦</span>
+        <span>Company Profile</span><span class="sep">✦</span>
+        <span>Undangan Digital</span><span class="sep">✦</span>
+        <span>Desain Modern</span><span class="sep">✦</span>
+        <span>Animasi Premium</span><span class="sep">✦</span>
+        <span>Responsive Design</span><span class="sep">✦</span>
+        <span>Landing Page</span><span class="sep">✦</span>
+        <span>Company Profile</span><span class="sep">✦</span>
+        <span>Undangan Digital</span><span class="sep">✦</span>
+        <span>Desain Modern</span><span class="sep">✦</span>
+        <span>Animasi Premium</span><span class="sep">✦</span>
+        <span>Responsive Design</span><span class="sep">✦</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-left">
+          <div class="section-tag reveal-up">Tentang Saya</div>
+          <h2 class="section-title reveal-up">
+            Seorang Developer<br />
+            <em>Penuh Semangat</em>
+          </h2>
+          <p class="about-text reveal-up">
+            Halo! Saya adalah seorang <strong>Junior Web Developer</strong> yang bersemangat dan berkomitmen untuk
+            menghadirkan website berkualitas tinggi dengan harga yang terjangkau. Setiap proyek saya kerjakan dengan
+            penuh dedikasi dan perhatian terhadap detail.
+          </p>
+          <p class="about-text reveal-up">
+            Saya percaya bahwa setiap bisnis berhak memiliki <strong>kehadiran digital yang memukau</strong>. Itulah
+            mengapa saya hadir — untuk mewujudkan visi Anda menjadi kenyataan di dunia maya.
+          </p>
+
+          <div class="skills-grid reveal-up">
+            <div class="skill-item">
+              <div class="skill-icon">🎨</div>
+              <span>UI Design</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">💻</div>
+              <span>HTML & CSS</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">⚡</div>
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">📱</div>
+              <span>Responsive</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">🚀</div>
+              <span>Performance</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">✨</div>
+              <span>Animation</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-right reveal-right">
+          <div class="about-image-wrapper">
+            <div class="about-image-frame">
+              <img src="Profil Rijald.jpg" alt="Foto Saya" class="about-photo" />
+              <div class="frame-decoration frame-dec-1"></div>
+              <div class="frame-decoration frame-dec-2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag reveal-up">Layanan</div>
+        <h2 class="section-title reveal-up">Apa yang Saya<br /><em>Tawarkan?</em></h2>
+        <p class="section-subtitle reveal-up">Tiga layanan unggulan yang saya sediakan untuk membantu bisnis Anda
+          berkembang di dunia digital.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card reveal-up" style="--delay: 0.1s">
+          <div class="service-number">01</div>
+          <div class="service-icon-wrap">
+            <div class="service-icon">🚀</div>
+          </div>
+          <h3 class="service-title">Landing Page</h3>
+          <p class="service-desc">Halaman penjualan yang dioptimalkan untuk mengkonversi pengunjung menjadi pelanggan.
+            Desain modern, cepat, dan persuasif untuk meningkatkan konversi bisnis Anda.</p>
+          <ul class="service-features">
+            <li>Desain Responsif</li>
+            <li>Optimasi Kecepatan</li>
+            <li>Call-to-Action Efektif</li>
+            <li>Animasi Menarik</li>
+          </ul>
+          <div class="service-hover-bg"></div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card service-card--featured reveal-up" style="--delay: 0.2s">
+          <div class="service-number">02</div>
+          <div class="service-icon-wrap">
+            <div class="service-icon">🏢</div>
+          </div>
+          <h3 class="service-title">Company Profile</h3>
+          <p class="service-desc">Website profesional yang mencerminkan identitas dan nilai perusahaan Anda. Bangun
+            kepercayaan dan kredibilitas di mata klien potensial.</p>
+          <ul class="service-features">
+            <li>Profil Perusahaan Lengkap</li>
+            <li>Portofolio Produk/Jasa</li>
+            <li>Formulir Kontak</li>
+            <li>SEO Friendly</li>
+          </ul>
+          <div class="service-hover-bg"></div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card reveal-up" style="--delay: 0.3s">
+          <div class="service-badge">Populer</div>
+          <div class="service-number">03</div>
+          <div class="service-icon-wrap">
+            <div class="service-icon">💌</div>
+          </div>
+          <h3 class="service-title">Undangan Digital</h3>
+          <p class="service-desc">Undangan pernikahan digital yang elegan dan berkesan. Hemat biaya cetak dengan tetap
+            memberikan kesan mewah kepada tamu undangan Anda.</p>
+          <ul class="service-features">
+            <li>Desain Elegan</li>
+            <li>Musik Latar</span></li>
+            <li>RSVP Online</li>
+            <li>Countdown Timer</li>
+          </ul>
+          <div class="service-hover-bg"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag reveal-up">Portofolio</div>
+        <h2 class="section-title reveal-up">Karya <em>Terbaik</em> Saya</h2>
+        <p class="section-subtitle reveal-up">Beberapa proyek yang telah saya selesaikan dengan penuh dedikasi dan
+          kreativitas.</p>
+      </div>
+
+      <div class="portfolio-filter reveal-up">
+        <button class="filter-btn active" data-filter="all">Semua</button>
+        <button class="filter-btn" data-filter="landing">Landing Page</button>
+        <button class="filter-btn" data-filter="company">Company Profile</button>
+        <button class="filter-btn" data-filter="wedding">Undangan</button>
+      </div>
+
+      <div class="portfolio-grid">
+        <!-- Project 1 -->
+        <div class="portfolio-item reveal-up" data-category="landing" style="--delay: 0.1s">
+          <div class="portfolio-card">
+            <div class="portfolio-thumb">
+              <img src="Project Landing Page Dinaraya-Rabit-Farm.jpg" alt="Startup SaaS Landing"
+                class="portfolio-img" />
+              <div class="thumb-placeholder thumb-1">
+                <span>Landing Page</span>
+                <span class="thumb-emoji">🚀</span>
+              </div>
+              <div class="portfolio-overlay">
+                <div class="overlay-content">
+                  <h4>Dinaraya-Rabbit-Farm</h4>
+                  <p>Landing page modern untuk startup teknologi</p>
+                  <a href="https://dinaraya-rabbit-farm.netlify.app/" target="_blank" class="overlay-btn">Lihat Detail
+                    →</a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category">Landing Page</span>
+              <h3 class="portfolio-title">Startup SaaS Landing</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="portfolio-item reveal-up" data-category="company" style="--delay: 0.2s">
+          <div class="portfolio-card">
+            <div class="portfolio-thumb">
+              <img src="Project Undangan Digital Domi dan Clara.jpg" alt="Startup SaaS Landing" class="portfolio-img" />
+              <div class="thumb-placeholder thumb-2">
+                <span>Undangan Digital</span>
+                <span class="thumb-emoji">🏢</span>
+              </div>
+              <div class="portfolio-overlay">
+                <div class="overlay-content">
+                  <h4>Domi & Clara</h4>
+                  <p>Undangan Digital Basic Namun Elegan</p>
+                  <a href="https://undangan-domi-clara.netlify.app/" target="_blank" class="overlay-btn">Lihat Detail
+                    →</a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category">Undangan Digital</span>
+              <h3 class="portfolio-title">Domi & Clara</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="portfolio-item reveal-up" data-category="wedding" style="--delay: 0.3s">
+          <div class="portfolio-card">
+            <div class="portfolio-thumb">
+              <img src="Project Undangan Digital Ronald-Diana.jpg" alt="Startup SaaS Landing" class="portfolio-img" />
+              <div class="portfolio-overlay">
+                <div class="overlay-content">
+                  <h4>Ronald & Diana</h4>
+                  <p>Undangan digital Premium dengan tema floral elegan</p>
+                  <a href="https://undangan-ronald-diana.netlify.app/index.html" target="_blank"
+                    class="overlay-btn">Lihat Detail →</a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category">Undangan Digital</span>
+              <h3 class="portfolio-title">Ronald & Diana</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="portfolio-item reveal-up" data-category="landing" style="--delay: 0.1s">
+          <div class="portfolio-card">
+            <div class="portfolio-thumb">
+              <img src="Project Landing Page Pizza Shop.jpg" alt="Startup SaaS Landing" class="portfolio-img" />
+              <div class="thumb-placeholder thumb-4">
+                <span>Landing Page</span>
+                <span class="thumb-emoji">🎯</span>
+              </div>
+              <div class="portfolio-overlay">
+                <div class="overlay-content">
+                  <h4>Pizza Rakat Timur</h4>
+                  <p>Landing page produk fashion wanita</p>
+                  <a href="https://websitesaya.github.io/Pizza-Rakat-Timur/" target="_blank" class="overlay-btn">Lihat
+                    Detail →</a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category">Landing Page</span>
+              <h3 class="portfolio-title">Pizza Rakat Timur</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="portfolio-item reveal-up" data-category="company" style="--delay: 0.2s">
+          <div class="portfolio-card">
+            <div class="portfolio-thumb">
+              <div class="thumb-placeholder thumb-5">
+                <span>Company Profile</span>
+                <span class="thumb-emoji">⚙️</span>
+              </div>
+              <div class="portfolio-overlay">
+                <div class="overlay-content">
+                  <h4>CV. Teknik Andalan</h4>
+                  <p>Profil perusahaan jasa teknik industri</p>
+                  <a href="#" class="overlay-btn">Lihat Detail →</a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category">Company Profile</span>
+              <h3 class="portfolio-title">CV. Teknik Andalan</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="portfolio-item reveal-up" data-category="wedding" style="--delay: 0.3s">
+          <div class="portfolio-card">
+            <div class="portfolio-thumb">
+              <img src="Project Undangan Digital Ari-Maya.jpg" alt="Startup SaaS Landing" class="portfolio-img" />
+              <div class="portfolio-overlay">
+                <div class="overlay-content">
+                  <h4>Ari & Maya</h4>
+                  <p>Undangan Digital Premium modern dengan galeri foto interaktif</p>
+                  <a href="https://websitesaya.github.io/UndanganAri-Maya/index.html" target="_blank"
+                    class="overlay-btn">Lihat Detail →</a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category">Undangan Digital</span>
+              <h3 class="portfolio-title">Ari & Maya</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Section -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag reveal-up">Testimoni</div>
+        <h2 class="section-title reveal-up">Apa Kata <em>Klien</em> Saya?</h2>
+      </div>
+
+      <div class="testimonial-slider reveal-up">
+        <div class="testimonial-track" id="testimonialTrack">
+          <div class="testimonial-card">
+            <div class="testi-quote">"</div>
+            <p class="testi-text">Hasilnya luar biasa! Website landing page yang dibuat sangat profesional dan membantu
+              bisnis saya berkembang pesat. Proses pengerjaan cepat dan komunikatif.</p>
+            <div class="testi-author">
+              <div class="testi-avatar">BU</div>
+              <div>
+                <strong>Budi Santoso</strong>
+                <span>Pemilik Toko Online</span>
+              </div>
+            </div>
+            <div class="testi-stars">★★★★★</div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testi-quote">"</div>
+            <p class="testi-text">Undangan digital yang dibuat sangat cantik dan elegan. Tamu-tamu kami sangat terkesan.
+              Fitur RSVP online sangat membantu manajemen tamu undangan kami.</p>
+            <div class="testi-author">
+              <div class="testi-avatar">RI</div>
+              <div>
+                <strong>Rina Amelia</strong>
+                <span>Pengantin</span>
+              </div>
+            </div>
+            <div class="testi-stars">★★★★★</div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testi-quote">"</div>
+            <p class="testi-text">Company profile perusahaan kami kini terlihat sangat profesional. Banyak klien baru
+              yang datang setelah melihat website kami. Sangat puas dengan hasilnya!</p>
+            <div class="testi-author">
+              <div class="testi-avatar">AN</div>
+              <div>
+                <strong>Anton Wijaya</strong>
+                <span>Direktur CV. Teknik Andalan</span>
+              </div>
+            </div>
+            <div class="testi-stars">★★★★★</div>
+          </div>
+        </div>
+
+        <div class="slider-controls">
+          <button class="slider-btn" id="prevBtn" aria-label="Previous">←</button>
+          <div class="slider-dots" id="sliderDots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <button class="slider-btn" id="nextBtn" aria-label="Next">→</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="process">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag reveal-up">Proses</div>
+        <h2 class="section-title reveal-up">Cara Kerja <em>Saya</em></h2>
+      </div>
+
+      <div class="process-steps">
+        <div class="process-step reveal-up" style="--delay: 0.1s">
+          <div class="step-number">01</div>
+          <div class="step-icon">💬</div>
+          <h3>Konsultasi</h3>
+          <p>Diskusi kebutuhan, tujuan, dan referensi desain yang Anda inginkan.</p>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step reveal-up" style="--delay: 0.2s">
+          <div class="step-number">02</div>
+          <div class="step-icon">🎨</div>
+          <h3>Desain</h3>
+          <p>Membuat mockup dan prototype desain sesuai brief yang telah disepakati.</p>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step reveal-up" style="--delay: 0.3s">
+          <div class="step-number">03</div>
+          <div class="step-icon">💻</div>
+          <h3>Development</h3>
+          <p>Pengkodean website dengan memastikan performa, responsivitas, dan kualitas terbaik.</p>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step reveal-up" style="--delay: 0.4s">
+          <div class="step-number">04</div>
+          <div class="step-icon">🚀</div>
+          <h3>Peluncuran</h3>
+          <p>Review bersama, revisi final, dan website siap diluncurkan ke publik.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="cta-bg">
+      <div class="cta-blob cta-blob-1"></div>
+      <div class="cta-blob cta-blob-2"></div>
+    </div>
+    <div class="container">
+      <div class="cta-content reveal-up">
+        <h2 class="cta-title">Siap Memulai<br /><em>Proyek Bersama?</em></h2>
+        <p class="cta-desc">Mari wujudkan website impian Anda bersama saya. Konsultasi gratis, tanpa biaya apapun!</p>
+        <div class="cta-actions">
+          <a href="https://wa.me/6281338596854" class="btn btn-white" target="_blank">
+            <span>💬</span> Chat via WhatsApp
+          </a>
+          <a href="mailto:bahagiasaja44@email.com" class="btn btn-outline-white">
+            📧 Kirim Email
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag reveal-up">Kontak</div>
+        <h2 class="section-title reveal-up">Mari <em>Terhubung!</em></h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal-up">
+          <div class="contact-item">
+            <div class="contact-icon">📱</div>
+            <div>
+              <strong>WhatsApp</strong>
+              <a href="https://wa.me/6281338596854">+62 813-3859-6854</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:bahagiasaja44@email.com">bahagiasaja44@email.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <strong>Lokasi</strong>
+              <span>Indonesia</span>
+            </div>
+          </div>
+
+          <div class="contact-social">
+            <a href="https://www.instagram.com/rijald_elimanafe?igsh=Zm4wazQ3Y3UxYWEx" target="_blank"
+              class="social-link">Instagram</a>
+            <a href="https://linkedin.com/in/username_anda" target="_blank" class="social-link">LinkedIn</a>
+            <a href="https://github.com/websitesaya" target="_blank" class="social-link">GitHub</a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal-up" id="contactForm">
+
+          <!-- Web3Forms Access Key -->
+          <input type="hidden" name="access_key" value="3d5b8bd2-2b43-4c17-b4fa-b19ce1a1c270" />
+          <input type="hidden" name="subject" value="Pesan Baru dari Portfolio Zhald.Dev" />
+          <input type="hidden" name="from_name" value="Portfolio Zhald.Dev" />
+
+          <div class="form-group">
+            <label for="name">Nama Lengkap</label>
+            <input type="text" id="name" name="name" placeholder="Nama Anda" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="email@anda.com" required />
+          </div>
+          <div class="form-group">
+            <label for="service">Layanan yang Diinginkan</label>
+            <select id="service" name="service">
+              <option value="">Pilih Layanan</option>
+              <option value="Landing Page">Landing Page</option>
+              <option value="Company Profile">Company Profile</option>
+              <option value="Undangan Digital">Undangan Digital</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" rows="4" placeholder="Ceritakan kebutuhan Anda..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <span>Kirim Pesan</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </button>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">Zhald<span class="logo-dot">.</span>Dev</div>
+        <p class="footer-tagline">Membuat website yang berkesan & berdampak</p>
+        <div class="footer-links">
+          <a href="#about">Tentang</a>
+          <a href="#services">Layanan</a>
+          <a href="#portfolio">Portofolio</a>
+          <a href="#contact">Kontak</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© Zhald Dev. All rights reserved.</p>
+        <p>Made with <span class="heart">♥</span> in Indonesia</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
